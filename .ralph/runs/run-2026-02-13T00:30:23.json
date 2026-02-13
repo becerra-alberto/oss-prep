@@ -1,0 +1,118 @@
+{
+  "timestamp": "2026-02-13T06:30:23Z",
+  "mode": "parallel",
+  "duration_secs": 245,
+  "stories": {
+    "1.1": {
+      "outcome": "done",
+      "duration_secs": 250,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0,
+      "turns": 0
+    },
+    "2.9": {
+      "outcome": "done",
+      "duration_secs": 330,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0,
+      "turns": 0
+    },
+    "2.8": {
+      "outcome": "done",
+      "duration_secs": 516,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0,
+      "turns": 0
+    },
+    "2.3": {
+      "outcome": "done",
+      "duration_secs": 832,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0,
+      "turns": 0
+    },
+    "2.2": {
+      "outcome": "done",
+      "duration_secs": 835,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0,
+      "turns": 0
+    },
+    "2.1": {
+      "outcome": "done",
+      "duration_secs": 837,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0,
+      "turns": 0
+    },
+    "2.7": {
+      "outcome": "done",
+      "duration_secs": 524,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0,
+      "turns": 0
+    },
+    "2.6": {
+      "outcome": "done",
+      "duration_secs": 546,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0,
+      "turns": 0
+    },
+    "2.5": {
+      "outcome": "done",
+      "duration_secs": 614,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0,
+      "turns": 0
+    },
+    "2.4": {
+      "outcome": "done",
+      "duration_secs": 828,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0,
+      "turns": 0
+    },
+    "3.1": {
+      "outcome": "done",
+      "duration_secs": 243,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0,
+      "turns": 0
+    },
+    "2.10": {
+      "outcome": "done",
+      "duration_secs": 261,
+      "tokens_in": 0,
+      "tokens_out": 0,
+      "cost_usd": 0,
+      "turns": 0
+    }
+  },
+  "totals": {
+    "completed": 12,
+    "tentative": 0,
+    "failed": 0,
+    "absorbed": 0,
+    "tokens_in": 0,
+    "tokens_out": 0,
+    "cost_usd": 0
+  },
+  "git": {
+    "commits": 1,
+    "insertions": 560,
+    "deletions": 3387
+  },
+  "learnings_extracted": 28
+}

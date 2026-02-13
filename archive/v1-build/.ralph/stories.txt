@@ -1,0 +1,40 @@
+# Source: tasks/prd-oss-prep.md
+# Generated: 2026-02-12T00:00:00Z
+# Stories: 1.1, 1.2, 2.1, 2.2, 2.3, 3.1, 3.2, 3.3, 3.4, 4.1, 4.2
+# NOTE: All stories edit the SAME file (SKILL.md). Batches MUST be sequential.
+
+# Ralph Story Queue
+# Format: ID | Title
+
+# [batch:1] — foundation: SKILL.md skeleton must exist before any phase content
+1.1 | Create SKILL.md Skeleton with Frontmatter, State Tracking & Phase Orchestration
+
+# [batch:2] — Phase 0 must exist before any audit/generation phase
+1.2 | Phase 0: Reconnaissance
+
+# [batch:3] — Phase 1: secrets audit (sequential — single-file target)
+2.1 | Phase 1: Secrets & Credentials Audit
+
+# [batch:4] — Phase 2: PII audit
+2.2 | Phase 2: PII Audit
+
+# [batch:5] — Phase 3: dependency audit
+2.3 | Phase 3: Dependency Audit
+
+# [batch:6] — Phase 4: code quality review
+3.1 | Phase 4: Code Architecture & Quality Review
+
+# [batch:7] — Phase 5: documentation generation
+3.2 | Phase 5: Documentation Generation
+
+# [batch:8] — Phase 6: GitHub setup
+3.3 | Phase 6: GitHub Repository Setup & CI/CD
+
+# [batch:9] — Phase 7: naming & identity review
+3.4 | Phase 7: Naming, Trademark & Identity Review
+
+# [batch:10] — Phase 8: history flatten (depends on all audit phases)
+4.1 | Phase 8: History Flatten
+
+# [batch:11] — Phase 9: final report (depends on history flatten)
+4.2 | Phase 9: Final Readiness Report
