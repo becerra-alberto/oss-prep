@@ -22,3 +22,7 @@ Mock run target: oss-prep itself (`~/Tools/oss-prep`)
 
 11. **Hard to parse what was reviewed** — The PII audit covers 8 categories but results are a wall of text. Need a summary table showing each category, its status (clean/findings), risk level, and suggested action at a glance.
 12. **Effort column unclear if tracked** — When the summary says a finding has "effort: auto-resolved at Phase 8," it's unclear whether that becomes a tracked action item or just informational text the user has to remember. Findings with deferred remediation should be explicitly recorded as pending actions in state.
+
+## General / Cross-Phase
+
+13. **Separate evaluation from changes** — The workflow mixes audit/evaluation phases (1-4, 7) with action phases (5, 6, 8) without distinction. The user should first see a full evaluation report across all audit phases, then decide which changes to apply. Currently each phase both evaluates AND acts, making it hard to get the full picture before committing to changes. Consider: run all audit phases first, present consolidated findings, then offer to execute remediation phases.
