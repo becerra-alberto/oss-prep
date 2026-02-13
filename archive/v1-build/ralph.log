@@ -1,0 +1,21 @@
+[2026-02-12 19:03:23] [ERROR] Not a Ralph project (no .ralph/config.json found).
+[2026-02-12 19:03:23] [ERROR] Run 'ralph init' to initialize.
+[2026-02-12 19:03:28] [INFO] Initializing Ralph in /Users/albertobecerra/Tools/ai-dev-toolkit/skills/oss-prep
+[2026-02-12 19:04:21] [CRASH] exit=1 cmd='cp "${RALPH_DIR}/commands/create-spec.md" ".claude/commands/create-spec.md"' func=interactive_init line=112
+[2026-02-12 19:04:21] [CRASH] stack: _ralph_err_handler interactive_init cmd_init main
+[2026-02-12 19:29:08] [INFO] Initializing Ralph in /Users/albertobecerra/Tools/ai-dev-toolkit/skills/oss-prep
+[2026-02-12 19:29:08] [WARN] Ralph already initialized in this project.
+[2026-02-12 19:30:05] [OK] Created .ralph/config.json
+[2026-02-12 19:30:05] [OK] Created .ralph/stories.txt
+[2026-02-12 19:30:05] [OK] Created .ralph/templates/
+[2026-02-12 19:30:05] [OK] Created .ralph/learnings/
+[2026-02-12 19:30:05] [OK] Installed .claude/commands/create-spec.md
+[2026-02-12 19:30:05] [OK] Ralph initialized. Edit .ralph/stories.txt to add your stories.
+[2026-02-12 19:30:05] [INFO] Then run: ralph run
+[2026-02-12 19:30:05] [WARN] Security note: Ralph runs Claude with --dangerously-skip-permissions by default.
+[2026-02-12 19:30:05] [WARN] This grants Claude unrestricted system access during story execution.
+[2026-02-12 19:30:05] [WARN] Review .ralph/config.json 'claude.flags' to customize.
+[2026-02-12 19:30:51] [WARN] stories.txt exists but has no active stories. Run /ralph to populate.
+[2026-02-12 19:30:51] [ERROR] No stories found in .ralph/stories.txt
+[2026-02-12 19:30:51] [INFO] Add stories in format: 1.1 | Story Title
+[2026-02-12 19:30:51] [INFO] Or run /ralph to generate specs from a PRD
