@@ -4,13 +4,17 @@ This file provides guidance to Claude Code when working with this repository.
 
 ## Project Overview
 
-oss-prep is a Claude Code skill that prepares private git repositories for public open-source release through a 10-phase audit workflow.
+oss-prep is a Claude Code skill that prepares private git repositories for public open-source release through a 10-phase audit workflow. Two modes are available:
+
+- **Interactive** (`/oss-prep`): User gates at every phase, progressive disclosure, manual decisions
+- **Full-Auto** (`/oss-prep-auto`): Autonomous pipeline with risk assessment, deterministic decisions (ADPs), scored readiness summary
 
 ## Architecture
 
 ```
 oss-prep/
-├── SKILL.md                    # Thin orchestrator (~250 lines)
+├── SKILL.md                    # Interactive orchestrator (~250 lines)
+├── SKILL-AUTO.md               # Full-auto orchestrator (~500 lines)
 ├── phases/
 │   ├── 00-recon.md             # Phase 0: Reconnaissance
 │   ├── 01-secrets.md           # Phase 1: Secrets Audit
@@ -30,7 +34,7 @@ oss-prep/
 
 ## Key Design Patterns
 
-- **Phase-Commit-Gate Sequencing**: Git commit after every phase, user gate before advancing
+- **Phase-Commit-Gate Sequencing**: Git commit after every phase, user gate before advancing (interactive) or ADP auto-resolve (auto)
 - **Atomic State Persistence**: `.oss-prep/state.json` with tmp-validate-rename writes
 - **Context Window Preservation**: Orchestrator delegates to phase sub-agents; only summaries in main context
 - **Scoped Staging**: Explicit file paths in every `git add`, never `-A` or `.`

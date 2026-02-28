@@ -184,6 +184,38 @@
         },
         "required": ["attempt", "error", "fallback"]
       }
+    },
+    "auto_mode": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether this run is in fully autonomous mode (oss-prep-auto)."
+    },
+    "auto_decisions_path": {
+      "type": "string",
+      "default": ".oss-prep/auto-decisions.json",
+      "description": "Path to the autonomous decision log file."
+    },
+    "auto_run_started_at": {
+      "type": "string",
+      "default": "",
+      "description": "ISO 8601 timestamp of when the auto run began."
+    },
+    "auto_run_completed_at": {
+      "type": "string",
+      "default": "",
+      "description": "ISO 8601 timestamp of when the auto run completed."
+    },
+    "auto_score": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100,
+      "default": 0,
+      "description": "Readiness score computed by the HITL summary (0-100, deduction-based)."
+    },
+    "risk_profile_generated": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether the Risk Assessment & Golden Path step has completed."
     }
   },
   "required": [
@@ -199,6 +231,12 @@
     "license_choice",
     "readiness_rating",
     "started_at",
-    "phase_failures"
+    "phase_failures",
+    "auto_mode",
+    "auto_decisions_path",
+    "auto_run_started_at",
+    "auto_run_completed_at",
+    "auto_score",
+    "risk_profile_generated"
   ]
 }
